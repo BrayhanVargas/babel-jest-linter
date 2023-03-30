@@ -1,0 +1,22 @@
+{
+  "name": "babel-jest-linter",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "repository": "git@github.com:BrayhanVargas/babel-jest-linter.git",
+  "author": "BrayhanVargas <balbervq@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "babel src/index.js --out-file lib/index.js",
+    "start": "yarn build && nodemon src/index.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "nodemon": "^2.0.22"
+  },
+  "type": "module",
+  "devDependencies": {
+    "@babel/cli": "^7.21.0",
+    "@babel/core": "^7.21.3",
+    "@babel/preset-env": "^7.20.2"
+  }
+}
